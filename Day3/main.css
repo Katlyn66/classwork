@@ -1,0 +1,41 @@
+
+/*Selects the first li inside the list with the class*/
+.awesome-list li:first-child {
+	font-weight: bold;
+
+}
+/*make all even items red*/
+.awesome-list li:nth-child(even) {
+	color:red;
+}
+
+/*make all even items red starting at 3
+.awesome-list li:nth-child(2n + 1) {
+	color:red;
+}
+*/
+
+/*Finds first p on the page*/
+p:first-child {
+	color:red;
+}
+/*sets last item in list to blue*/
+.awesome-list li:last-child {
+	color:blue;
+}
+
+/*Removes underline from links and changes it to bold*/
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	font-weight: bold;
+}
+
+a[href*="http"] {
+	color:orange;
+}
+a[href^="http"]:hover {
+	color:black;
+}
